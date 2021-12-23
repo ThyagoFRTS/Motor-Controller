@@ -1,15 +1,19 @@
 # Motor Controller
+<p>This is an application created to embedded systems discipline</p>
+<p>The application display temperature and potenciometer values and manage a motor and leds</p>
 
+<h2>Proteus Project</h2>
 <div align="center">
-  <img src="./images/proteus_image.png" alt="Project on Proteus" width="706" height="949"style="margin: 5px;">
+  <img src="./images/proteus_image.png" alt="Project on Proteus" width="706" height="494"style="margin: 5px;">
   
 </div>
+
+<h2>Interface Application</h2>
+
 <div align="center">
   <img src="./images/app.png" alt="application" width="744" height="578" style="margin: 5px;">
 </div>
 
-<p>This is an application created to embedded systems discipline</p>
-<p>The application display temperature and potenciometer values and manage a motor and leds</p>
 <h2>Funcionalitties</h2>
 <ul>
   <li>On/Off leds</li>
