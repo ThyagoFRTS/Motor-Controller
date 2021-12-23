@@ -1,11 +1,11 @@
 # Motor Controller
 
 <div align="center">
-  <img src="./images/proteus_image.png" alt="Project on Proteus" width="249" height="552"style="margin: 5px;">
-  <img src="./images/controller.svg" alt="circuit" width="249" height="552" style="margin: 5px;">
+  <img src="./images/proteus_image.png" alt="Project on Proteus" width="706" height="949"style="margin: 5px;">
+  
 </div>
 <div align="center">
-  <img src="./images/app.png" alt="application" width="249" height="552" style="margin: 5px;">
+  <img src="./images/app.png" alt="application" width="744" height="578" style="margin: 5px;">
 </div>
 
 <p>This is an application created to embedded systems discipline</p>
