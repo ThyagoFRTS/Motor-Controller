@@ -11,15 +11,7 @@ import matplotlib.pyplot as plt
 from pandas import DataFrame
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import time
-'''
-s = serial.Serial()
-s.port = 'COM2'
-s.timeout = 2
-s.baudrate = 9600
-s.open()
-s.write(b'1')
-s.readline()
-'''
+
 state = {'potency': [0,0,0,0,0],'temperature': [0,0,0,0,0]}
 
 led1 = False
@@ -33,6 +25,7 @@ fig_pot = Figure(figsize = (3, 3), dpi = 90)
 fig_temp = Figure(figsize = (3, 3), dpi = 90)
 fig_pot.add_axes([0,8,10,50])
 fig_temp.add_axes([0,0,10,50])
+
 
 
 def create_window():
@@ -118,7 +111,7 @@ def plot_potency():
 	global state
 	global fig_pot
 	global potency_grah
-	plot1 = fig_pot.add_subplot(111)
+	plot1 = fig_pot.add_subplot()
 	plot1.plot(state['potency'],color='g',marker='o')
 	potency_grah.draw()
 	
@@ -127,9 +120,7 @@ def plot_temperature():
 	global state
 	global fig_temp
 	global temperature_graph
-	plot2 = fig_temp.add_subplot(111)
-	
-	
+	plot2 = fig_temp.add_subplot()
 	plot2.plot(state['temperature'],color='b',marker='*')
 	temperature_graph.draw()
 	
@@ -165,12 +156,17 @@ btn4 = tk.Button(top, text = "Left Motor",command = lambda: left())
 btn5 = tk.Button(top, text = "Right Motor",command = lambda: right())
 btn6 = tk.Button(top, text = "Off Motor",command = lambda: offMotor())
 
+label1 = tk.Label(bot, text='Tension')
+label2 = tk.Label(bot, text='Temperature')
 
 potency_grah = FigureCanvasTkAgg(fig_pot,master = bot)  
 temperature_graph = FigureCanvasTkAgg(fig_temp,master = bot)  
 
-potency_grah.get_tk_widget().grid(row = 0,column = 0, padx = 5, pady = 10)
-temperature_graph.get_tk_widget().grid(row = 0,column = 1, padx = 5, pady = 10)
+potency_grah.get_tk_widget().grid(row = 0,column = 0, padx = 5, pady = 20)
+temperature_graph.get_tk_widget().grid(row = 0,column = 1, padx = 5, pady = 20)
+
+label1.grid(row = 1,column = 0)
+label2.grid(row = 1,column = 1)
 
 btn1.grid(row = 0,column = 0, padx = 10, pady = 10)
 btn2.grid(row = 0,column = 1, padx = 10, pady = 10)
