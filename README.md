@@ -11,7 +11,7 @@
 <h2>Interface Application</h2>
 
 <div align="center">
-  <img src="./images/app.png" alt="application" width="744" height="578" style="margin: 5px;">
+  <img src="./images/app-att.png" alt="application" width="744" height="578" style="margin: 5px;">
 </div>
 
 <h2>Funcionalitties</h2>
